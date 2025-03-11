@@ -39,7 +39,7 @@
     text-decoration: none;
     color: #fff;
 }
-.navbar a{
+.navbar .icon{
     display: none;
 }
 
@@ -136,6 +136,31 @@
         align-items: center;
         justify-content: center;
        }
+       .entro span{
+        position: relative;
+        color: #6B9DDB transparent;
+    text-transform: uppercase;    
+        
+    }
+    
+    
+    
+    span::before{
+        content: attr(data-text);
+        color: #FFFFFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        -webkit-text-stroke: 0.1vw black ;
+        border-right:  3px solid red ;
+        
+        
+        overflow: hidden;
+        animation: ani1 3s linear infinite alternate-reverse;
+    
+    }
 
 }
 @media (max-width:360px){
